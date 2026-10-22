@@ -78,12 +78,22 @@ The goal of this project is to help a new automobile company understand how car 
 - **Descriptive Statistics:** Used to summarise the average (mean, median) and spread (standard deviation, percentiles) of car prices and specs.
 - **Hypothesis Testing:** Used the Shapiro-Wilk test to check for normality. Used the Spearman rank correlation test to check the relationship between continuous, non-parametric variables (like engine size and price). Used the Mann-Whitney U test to check for price differences between categorical groups (like drive-wheel and brands).
 - **Machine Learning & Tuning:** An Extra Trees Regressor was trained on the data to predict price. As the initial model overfitted (scoring an R-squared of 1.0 on the training data), hyperparameters were changed to restrict tree depth, forcing the model to generalise more to unseen data. This time the best model was a Gradient Boosting Regressor.
-- **Limitations & Alternatives:** During evaluation, the Extra Trees Regressor returned an R-squared score of 1.0 on the training data, indicating that the model overfitted by memorising the training set. In a future iteration we would tune hyperparameters (such as limiting the maximum depth of the trees) to force the model to generalise better.
+- **Limitations & Alternatives:** The dataset is small (205 rows), which increases the risk of overfitting. The initial Extra Trees Regressor model overfitted by memorising the training set (with an R-squared score of 1.0). To resolve this, further hyperparameter tuning was applied in Version 2, identifying a Gradient Boosting Regressor as the best model to generalise to unseen data.
 - **AI Tool Usage:** Generative AI (Gemini) was used as a tutoring tool to explain complex statistical concepts (like variance and quartiles). It was also used to help write, adapt, and format code, check observations and conclusions, help with markdown formatting and as a language and formatting tool for this README.
 
-## Ethical considerations
+## Ethical Considerations, Privacy and Governance
 
-This project uses a publicly available historical dataset compiled in 1985. It contains vehicle specifications and price data. It does not contain any personally identifiable information, so is in line with GDPR laws.
+**Data Privacy & Legal (GDPR)**
+This dataset uses historical, publicly available data. It contains vehicle specifications and price data. It does not contain any personally identifiable information and is fully GDPR compliant, posing no risk to individual data privacy.
+
+**Bias**
+As this dataset dates back to 1985, there are serious concerns around using the predictive model alone as it is today. This model should not be used alone as a predictor of current car prices in the US market. The automotive industry has heavily developed, and the financial situation in the US, buying habits, vehicle regulations and the relationship between the industry and the economy have changed. This model does not account for inflation, modern safety standards, or recent advancements in automotive technology. It can, however, be used to evaluate what car prices were at that time based on features like engine size and horsepower.
+
+**Social Implications**
+Using this model as it is today would not be sufficient for a company to enter the current US car market due to the technology and regulatory developments mentioned above. Using it alone may lead to mispricing cars today, which would heavily impact consumer trust.
+
+**Environmental Considerations**
+As this dataset is from 1985, it reflects a time before modern emissions standards and the introduction of electric vehicles. The current model does not account for the environmental impact of vehicles, which is a major focus in today's automotive market. Relying on this data today would mean ignoring critical factors like fuel efficiency and emissions compliance, which heavily influence both modern car laws and consumer purchasing choices.
 
 ## Dashboard Design
 
