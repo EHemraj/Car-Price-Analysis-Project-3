@@ -111,10 +111,14 @@ As this dataset is from 1985, it reflects a time before modern emissions standar
 There are no known bugs in the code.
 During the EDA phase, running certain visualisations generated a warnings in the Jupyter Notebook. The warning indicated that some background methods used by our libraries (such as Seaborn or Pandas) will be deprecated in future software versions. As this is a dependency warning about future library updates and does not break the current code or affect the accuracy of the analysis, it was left unresolved.
 
-## Development Roadmap
+## Project Retrospective & Practical Challenges
 
-- **Challenges:** The main challenges were choosing the correct statistical tests, understanding and modifying code for the ML pipeline and interpreting the results from the statistical tests and the ML model.
-- **Next Steps:** In a future iteration, I will extract Feature Importances from the model to identify and drop variables that do not actively drive the price. I will also further tune the hyperparameters to restrict tree depth and prevent training set memorisation.
+Executing this project presented several practical challenges requiring strategic problem-solving:
+
+- **Statistical & Technical Implementation:** Early challenges included selecting the correct non-parametric statistical tests (Spearman rank correlation and Mann-Whitney U tests) for data that was not normally distributed, as well as understanding and modifying the Python code to build the machine learning pipeline and accurately interpret its results.
+- **Dataset Size & Overfitting:** A primary challenge was the limited volume of data (only 205 rows). As the sample was so small, the initially tuned model memorised the training data, achieving an R-squared of 1.0. Resolving this required a second iteration of hyperparameter tuning with stricter parameters to restrict tree depth and force the model to generalise better.
+- **Dashboard Interactivity:** Configuring the dashboard filters required significant trial and error. Initially, linking different charts caused misleading visualisations (for example, selecting certain filters incorrectly displayed a specific drive-wheel as making up 100% of mainstream cars). Resolving this required precise filtering to ensure the charts interacted accurately without distorting the data.
+- **Contextualising Historical Data:** Adapting an analysis of 1985 historical data to address a modern business requirement meant acknowledging strict limitations. A significant challenge was ensuring the dashboard and documentation clearly stated that while the model proves relationships between car specs and price, the specific financial outputs cannot be safely deployed in today's automotive market.
 
 ## Deployment
 
