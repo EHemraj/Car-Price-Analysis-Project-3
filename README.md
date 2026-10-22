@@ -132,6 +132,7 @@ This dashboard is published and hosted on Tableau Public:
 - **Matplotlib & Seaborn:** Used to construct static data visualisations (histograms, box plots, scatter plots, and correlation matrices).
 - **Pingouin:** Used to run statistical tests, specifically the Shapiro-Wilk test, Spearman rank correlation, and Mann-Whitney U test.
 - **Scikit-Learn:** Used to build, train, and evaluate the Extra Trees Regressor machine learning pipeline.
+- **OS:** Used to manage file paths and route ML outputs to version-controlled directories.
 
 ## Credits
 
