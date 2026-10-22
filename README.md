@@ -12,7 +12,7 @@ Specifically:
 - **Performance & Size:** As a car's engine size, horsepower, curb weight, and length increase, its price significantly increases.
 - **Drive-Wheel:** Rear-wheel-drive (RWD) vehicles are priced significantly higher than front-wheel-drive (FWD) vehicles.
 - **Brand Value:** Luxury manufacturers (such as BMW, Jaguar, Buick, and Porsche) command a statistically significant price premium over mainstream manufacturers.
-- **Predictive Modeling:** The initial Extra Trees Regressor model memorised the training data, but has since been refined using hyperparameter tuning. The current Version 2 model successfully generalises to unseen data and provides reliable price estimations.
+- **Predictive Modeling:** The initial Extra Trees Regressor model memorised the training data, but has since been refined. By tuning hyperparameters and evaluating different algorithms, the current Version 2 model (a Gradient Boosting Regressor) successfully generalises to unseen data and provides reliable price estimations.
 
 ## Dataset Content
 
@@ -77,7 +77,7 @@ The goal of this project is to help a new automobile company understand how car 
 
 - **Descriptive Statistics:** Used to summarise the average (mean, median) and spread (standard deviation, percentiles) of car prices and specs.
 - **Hypothesis Testing:** Used the Shapiro-Wilk test to check for normality. Used the Spearman rank correlation test to check the relationship between continuous, non-parametric variables (like engine size and price). Used the Mann-Whitney U test to check for price differences between categorical groups (like drive-wheel and brands).
-- **Machine Learning:** An Extra Trees Regressor was trained on the data to predict price.
+- **Machine Learning & Tuning:** An Extra Trees Regressor was trained on the data to predict price. As the initial model overfitted (scoring an R-squared of 1.0 on the training data), hyperparameters were changed to restrict tree depth, forcing the model to generalise more to unseen data. This time the best model was a Gradient Boosting Regressor.
 - **Limitations & Alternatives:** During evaluation, the Extra Trees Regressor returned an R-squared score of 1.0 on the training data, indicating that the model overfitted by memorising the training set. In a future iteration we would tune hyperparameters (such as limiting the maximum depth of the trees) to force the model to generalise better.
 - **AI Tool Usage:** Generative AI (Gemini) was used as a tutoring tool to explain complex statistical concepts (like variance and quartiles). It was also used to help write, adapt, and format code, check observations and conclusions, help with markdown formatting and as a language and formatting tool for this README.
 
