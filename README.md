@@ -57,10 +57,15 @@ The goal of this project is to help a new automobile company understand how car 
 
 ## Project Plan
 
-1. **Extract, Transform, Load (ETL):** We loaded the raw dataset, checked for missing values, cleaned and standardised the column names, and exported a clean CSV ready for analysis.
-2. **Exploratory Data Analysis (EDA):** We investigated the clean data using descriptive statistics (calculating mean, median, standard deviation, min/max values, and percentiles) and visualisations to identify outliers, trends, and correlations. We formed hypotheses, explored them visually, and tested them statistically to accept or reject them.
-3. **Interactive Visualisations (Tableau):** We created a Tableau dashboard for a non-technical audience to show the relationship between the most important features we identified and car price.
-4. **Machine Learning (ML):** We created a predictive pipeline using an Extra Trees Regressor to estimate car prices, evaluating the model's performance using R-squared and Mean Absolute Error (MAE) scores. We used regression as we knew the target (`price`) and wanted to predict a continuous numerical value.
+- **Implementation:**
+  - **Planning:** The project was initially mapped out using a Kanban board to track tasks.
+  - **ETL (Notebook 1):** We loaded the raw dataset, checked for missing values, cleaned and standardised column names, and exported the clean CSV ready for analysis.
+  - **EDA (Notebook 2):** We investigated the clean data using descriptive statistics (calculating mean, median, standard deviation, min/max values, and percentiles) and visualisations to identify outliers, trends, and correlations. We formed hypotheses, explored them visually, and tested them statistically to accept or reject them.
+  - **Machine Learning (Notebook 3):** We built a predictive pipeline to estimate car prices. We used regression as we knew the target (`price`) and wanted to predict a continuous numerical value. We evaluated performance using R-squared and Mean Absolute Error (MAE) scores. After the initial hyperparameter tuning resulted in an Extra Trees Regressor that overfitted, a second round of tuning with different parameters was applied. This developed a Gradient Boosting Regressor (Version 2) that generalised to unseen data better than the first model.
+  - **Dashboard Creation:** We built an interactive Tableau dashboard, incorporating both the exploratory insights for a non-technical audience and the predictive model's performance metrics.
+- **Evaluation:** We evaluated the predictive model using R-squared and Mean Absolute Error (MAE) metrics. We also reviewed the dashboard to make sure the charts clearly explained complex details.
+- **Maintenance:** We used Git and GitHub to save and track changes to the project. We wrote Python code to save the machine learning results of the second version of the model into a specific version folder (outputs/v2).
+- **Updates:** Future iterations of this project would require sourcing a modern, high-volume dataset to account for inflation, electric vehicles and current emissions standards
 
 ## The rationale to map the business requirements to the Data Visualisations
 
