@@ -87,9 +87,9 @@ This project uses a publicly available historical dataset compiled in 1985. It c
 
 ## Dashboard Design
 
-- **Dashboard Link:** https://public.tableau.com/app/profile/e.hemraj/viz/CarPriceAnalysis_17918339391330/CarPriceAnalysis
+- **Dashboard Link:** https://public.tableau.com/app/profile/e.hemraj/viz/Project3CarPriceAnalysis/Dashboard1
 
-- **Design Strategy:** The dashboard was designed to translate complex Jupyter Notebook outputs into interactive visualisations for a non-technical audience. It allows the audience to filter specific car features and observe how those variables impact car prices within the dataset.
+- **Design Strategy:** The dashboard was designed to translate complex Jupyter Notebook outputs into interactive visualisations for a non-technical audience. It allows the audience to filter specific car features and observe how those variables impact car prices within the dataset. It includes narratives alongside technical metrics (R-squared and MAE) to ensure insights regarding model performance and how car specifications affect price are accessible.
 
 ## Unfixed Bugs
 
@@ -105,7 +105,7 @@ During the EDA phase, running certain visualisations generated a warnings in the
 
 This dashboard is published and hosted on Tableau Public:
 
-- [Car Price Analysis Dashboard] https://public.tableau.com/app/profile/e.hemraj/viz/CarPriceAnalysis_17918339391330/CarPriceAnalysis
+- https://public.tableau.com/app/profile/e.hemraj/viz/Project3CarPriceAnalysis/Dashboard1
 
 - The project code and Jupyter Notebooks are hosted in this GitHub repository.
 
