@@ -44,7 +44,7 @@ To run this project locally:
 
 The goal of this project is to help a new automobile company understand how car prices are determined in the US market so they can successfully compete against existing local and European brands. The main requirements are to explore the data to find out which car features have the greatest effect on price, then build a machine learning model that can predict a car's price based on its specifications.
 
-## Hypothesis and how to validate?
+## Hypothesis & Validation
 
 - **Hypothesis 1 (Engine Specs):** There is a statistically significant correlation between engine size/horsepower and car price.
   - _Validation:_ We visualised this using histograms and scatter plots. Because a Shapiro-Wilk test proved the data did not have a normal distribution, we used a Spearman rank correlation test. This test mathematically proved a significant positive correlation between engine specs and price.
@@ -67,7 +67,7 @@ The goal of this project is to help a new automobile company understand how car 
 - **Maintenance:** We used Git and GitHub to save and track changes to the project. We wrote Python code to save the machine learning results of the second version of the model into a specific version folder (outputs/v2).
 - **Updates:** Future iterations of this project would focus on refining the model by extracting Feature Importances to identify and drop variables that do not actively drive price. Additionally, to make the predictive tool safely viable for a modern business, the existing pipeline would need to be retrained on a contemporary dataset (post-2020) to account for modern inflation, electric vehicle technology, and current emissions standards.
 
-## The rationale to map the business requirements to the Data Visualisations
+## The Rationale to Map the Business Requirements to the Data Visualisations
 
 | Business Question / Hypothesis                                                                            | Visualisation Used                  | Rationale for Chart Selection                                                                                                                                         |
 | :-------------------------------------------------------------------------------------------------------- | :---------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -78,7 +78,7 @@ The goal of this project is to help a new automobile company understand how car 
 | Is there a significant price difference between luxury and mainstream brands?                             | Box Plot                            | Allows easy visual comparison of the median price and overall price spread between different categorical groups, separating the luxury tier from the mainstream tier. |
 | Can we reliably estimate a car's market price based on its specific attributes?                           | Actual vs. Predicted Plot           | Visually demonstrates the accuracy of the machine learning model by showing how far predictions are from real prices                                                  |
 
-## Analysis techniques used
+## Analysis Techniques
 
 - **Descriptive Statistics:** Used to summarise the average (mean, median) and spread (standard deviation, percentiles) of car prices and specs.
 - **Hypothesis Testing:** Used the Shapiro-Wilk test to check for normality. Used the Spearman rank correlation test to check the relationship between continuous, non-parametric variables (like engine size and price). Used the Mann-Whitney U test to check for price differences between categorical groups (like drive-wheel and brands).
