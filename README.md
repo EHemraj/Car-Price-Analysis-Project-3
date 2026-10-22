@@ -83,8 +83,6 @@ The goal of this project is to help a new automobile company understand how car 
 - **Descriptive Statistics:** Used to summarise the average (mean, median) and spread (standard deviation, percentiles) of car prices and specs.
 - **Hypothesis Testing:** Used the Shapiro-Wilk test to check for normality. Used the Spearman rank correlation test to check the relationship between continuous, non-parametric variables (like engine size and price). Used the Mann-Whitney U test to check for price differences between categorical groups (like drive-wheel and brands).
 - **Machine Learning & Tuning:** An Extra Trees Regressor was trained on the data to predict price. As the initial model overfitted (scoring an R-squared of 1.0 on the training data), hyperparameters were changed to restrict tree depth, forcing the model to generalise more to unseen data. This time the best model was a Gradient Boosting Regressor.
-- **Limitations & Alternatives:** The dataset is small (205 rows), which increases the risk of overfitting. The initial Extra Trees Regressor model overfitted by memorising the training set (with an R-squared score of 1.0). To resolve this, further hyperparameter tuning was applied in Version 2, identifying a Gradient Boosting Regressor as the best model to generalise to unseen data.
-- **AI Tool Usage:** Generative AI (Gemini) was used as a tutoring tool to explain complex statistical concepts (like variance and quartiles). It was also used to help write, adapt, and format code, check observations and conclusions, help with markdown formatting and as a language and formatting tool for this README.
 
 ## Ethical Considerations, Privacy and Governance
 
@@ -140,7 +138,7 @@ This dashboard is published and hosted on Tableau Public:
 ### Content
 
 - **Code Institute LMS:** Code structures, syntax examples, and data analysis methodologies were used and adapted from the course lessons.
-- **Generative AI (Gemini):** Used as a tutoring and refinement tool. It assisted with writing and adapting code logic, explaining complex statistical concepts, formatting this README, checking observations and conclusions, planning the Kanban board tasks, and troubleshooting dashboard logic.
+- **Generative AI (Gemini):** Used as a tutoring and linguistic refinement tool. It assisted with writing and adapting code logic, explaining complex statistical concepts, drafting Markdown, formatting this README, checking observations and conclusions, planning the Kanban board tasks, and troubleshooting dashboard logic.
 - **GitHub Copilot:** Predictions used for code and comment sections.
 - **Previous Coursework:** My complete Project 2 submission was used as the foundational starting point for this project, including the README, data, ETL, EDA, and ML notebooks and Tableau Dashboard. The project was expanded and further developed to meet the Project 3 requirements. Additionally, a code line for imports and the project setup instructions were reused from my Project 1 submission.
 - **Jayne Lawley (Project 1):** The code to save the cleaned CSV file was adapted from Jayne Lawley's Project 1 submission.
