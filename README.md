@@ -12,7 +12,7 @@ Specifically:
 - **Performance & Size:** As a car's engine size, horsepower, curb weight, and length increase, its price significantly increases.
 - **Drive-Wheel:** Rear-wheel-drive (RWD) vehicles are priced significantly higher than front-wheel-drive (FWD) vehicles.
 - **Brand Value:** Luxury manufacturers (such as BMW, Jaguar, Buick, and Porsche) command a statistically significant price premium over mainstream manufacturers.
-- **Predictive Modeling:** The initial Extra Trees Regressor model memorised the training data, but has since been refined. By tuning hyperparameters and evaluating different algorithms, the current Version 2 model (a Gradient Boosting Regressor) successfully generalises to unseen data and provides reliable price estimations.
+- **Predictive Modelling:** The initial Extra Trees Regressor model memorised the training data, but has since been refined. By tuning hyperparameters and evaluating different algorithms, the current Version 2 model (a Gradient Boosting Regressor) successfully generalises to unseen data and provides reliable price estimations.
 
 ## Dataset Content
 
