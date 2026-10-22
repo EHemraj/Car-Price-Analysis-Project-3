@@ -65,7 +65,7 @@ The goal of this project is to help a new automobile company understand how car 
   - **Dashboard Creation:** We built an interactive Tableau dashboard, incorporating both the exploratory insights for a non-technical audience and the predictive model's performance metrics.
 - **Evaluation:** We evaluated the predictive model using R-squared and Mean Absolute Error (MAE) metrics. We also reviewed the dashboard to make sure the charts clearly explained complex details.
 - **Maintenance:** We used Git and GitHub to save and track changes to the project. We wrote Python code to save the machine learning results of the second version of the model into a specific version folder (outputs/v2).
-- **Updates:** Future iterations of this project would require sourcing a modern, high-volume dataset to account for inflation, electric vehicles and current emissions standards
+- **Updates:** Future iterations of this project would focus on refining the model by extracting Feature Importances to identify and drop variables that do not actively drive price. Additionally, to make the predictive tool safely viable for a modern business, the existing pipeline would need to be retrained on a contemporary dataset (post-2020) to account for modern inflation, electric vehicle technology, and current emissions standards.
 
 ## The rationale to map the business requirements to the Data Visualisations
 
