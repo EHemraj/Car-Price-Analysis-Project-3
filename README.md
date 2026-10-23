@@ -102,7 +102,7 @@ As this dataset is from 1985, it reflects a time before modern emissions standar
 
 - **Dashboard Link:** https://public.tableau.com/app/profile/e.hemraj/viz/Project3CarPriceAnalysis/Dashboard1
 
-- **Design Strategy:** The Tableau workbook contains two distinct dashboards. They were designed to translate complex Jupyter Notebook outputs into interactive visualisations for a non-technical audience. The first dashboard allows the audience to filter specific car features and observe how those variables impact car prices within the dataset. The second dashboard displays the predictive model's performance, including narratives alongside technical metrics (R-squared and MAE) to ensure insights regarding the car price estimations are accessible.
+- **Design Strategy:** The Tableau workbook contains two distinct dashboards. They were designed to translate complex Jupyter Notebook outputs into interactive visualisations for a technical and non-technical audience. The first dashboard allows the audience to filter specific car features and observe how those variables impact car prices within the dataset. The second dashboard displays the predictive model's performance, including narratives alongside technical metrics (R-squared and MAE) to ensure insights regarding the car price estimations are accessible.
 
 ## Unfixed Bugs
 
